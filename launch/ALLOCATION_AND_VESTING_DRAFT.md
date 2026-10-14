@@ -6,7 +6,7 @@ Total supply: **1,000,000,000 EXIT**, 9 decimals. Creator public address supplie
 
 | Bucket | Share | EXIT | Destination | Suggested restrictions (NOT approved) |
 |---|---:|---:|---|---|
-| Community + liquidity | 60% | 600,000,000 | Pool vault and community-distribution wallets TBD | Define pool amount, distribution eligibility and custody separately. No claim that all 600M are circulating or locked. |
+| Liquidity | 20% | 200,000,000 | Pool vault / LP custody TBD | Budget only; actual initial pool deposit, paired capital, LP custody and release TBD. |\n| Community distribution | 40% | 400,000,000 | Community distribution wallet TBD | Eligibility, claim mechanism, schedule, vesting and initial circulation TBD. |
 | Development | 20% | 200,000,000 | Dedicated team vesting account TBD | 12-month cliff followed by 24 months of linear vesting; disclose beneficiary wallets. |
 | Treasury | 15% | 150,000,000 | Multisig treasury TBD | Suggested 36-month linear release; spending requires multisig approval and public reporting. |
 | Marketing | 5% | 50,000,000 | Dedicated marketing vault TBD | Suggested 24 monthly releases; disclose market-making, promotions and compensation. |
@@ -24,7 +24,7 @@ All percentages sum to 100%; no allocations have been issued. Proposed vesting s
 8. Obtain separate explicit final user authorization before minting, transferring, funding liquidity or listing.
 
 ## Unresolved approvals
-- [ ] Exact liquidity-vs-community split within 600M
+- [x] Draft liquidity-vs-community budget recorded: 200M liquidity / 400M community (not authorized for deployment)
 - [ ] All receiving public wallet addresses and signed ownership verification
 - [ ] Development vesting terms and beneficiaries
 - [ ] Treasury multisig signers, quorum and spending controls
@@ -33,3 +33,14 @@ All percentages sum to 100%; no allocations have been issued. Proposed vesting s
 - [ ] Liquidity venue, pair, paired asset funding and lock/custody terms
 - [ ] Metadata authority, mint/freeze authority plan and devnet test results
 - [ ] Legal review, final transaction review and explicit final launch authorization
+
+## Liquidity funding, custody and release decisions — outstanding
+
+- Select DEX and pool type, and choose EXIT/SOL or EXIT/USDC pair.
+- Approve how many of the 200M EXIT budget enter the initial pool, how much paired SOL/USDC is funded, who funds it, and the resulting initial pool price. **No price is set by token supply alone.**
+- Decide whether remaining liquidity-budget tokens stay in treasury/escrow, how they can be deployed, and who can authorize later deposits.
+- Identify the wallet/multisig controlling liquidity deposits and any LP position or LP tokens. Decide whether LP positions will be locked, burned, or controlled by a disclosed multisig; verify technical feasibility for chosen pool type.
+- Approve timelocks, signer quorum, custody backup, withdrawal rights, and public proof of any lock. No lock is in effect yet.
+- Approve community distribution eligibility, snapshot criteria if applicable, anti-sybil rules, claim windows, clawback/expiry handling, recipient wallet, and vesting/unlock schedule.
+- Confirm the initial circulating amount, treatment of undistributed tokens, and insider holdings before any public marketing.
+- Obtain explicit authorization before any on-chain transaction; no mint, transfer, liquidity funding, listing or sale is approved.
