@@ -12,11 +12,19 @@
   "creatorWallet": "9sMaCfsHPMRChEnGA5KJRrupoowf3pfmQPUF4Fpx9s87",
   "allocations": [
     {
-      "category": "community_liquidity",
-      "percent": 60,
-      "tokens": 600000000,
+      "category": "liquidity",
+      "percent": 20,
+      "tokens": 200000000,
       "wallet": null,
-      "vesting": "TBD; distinguish liquidity deposit from community distribution",
+      "release": "Pool funding amount, timing and LP custody TBD",
+      "approved": false
+    },
+    {
+      "category": "community",
+      "percent": 40,
+      "tokens": 400000000,
+      "wallet": null,
+      "release": "Distribution eligibility, timing, vesting and claim mechanism TBD",
       "approved": false
     },
     {
@@ -48,7 +56,15 @@
     "venue": "TBD",
     "pair": "TBD",
     "amount": "TBD",
-    "custody": "TBD"
+    "custody": "TBD",
+    "tokenBudget": 200000000,
+    "pairedAsset": "TBD",
+    "pairedAssetAmount": "TBD",
+    "initialPoolDeposit": "TBD (up to approved token budget)",
+    "lpTokenCustody": "TBD",
+    "lockOrBurn": "TBD",
+    "initialPrice": "TBD",
+    "releaseAuthorization": false
   },
   "mintAddress": null,
   "logoApproval": "approved",
@@ -59,10 +75,19 @@
     "supply": true,
     "creatorWallet": "address supplied, ownership unverified",
     "mintAuthorityPolicy": true,
-    "allocation": "balanced 60/20/15/5 model drafted, NOT approved for execution",
+    "allocation": "60/20/15/5 draft with 200M liquidity + 400M community split recorded; no execution authorization",
     "liquidity": false,
     "metadataUpdateAuthority": false,
     "legalReview": false,
     "finalMintAuthorization": false
+  },
+  "communityDistribution": {
+    "tokenBudget": 400000000,
+    "eligibility": "TBD",
+    "claimMechanism": "TBD",
+    "vesting": "TBD",
+    "distributionWallet": null,
+    "initialCirculatingAmount": "TBD",
+    "releaseAuthorization": false
   }
 }
