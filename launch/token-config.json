@@ -59,32 +59,43 @@
     "custody": "TBD",
     "tokenBudget": 200000000,
     "pairedAsset": "SOL",
-    "pairedAssetAmount": "TBD",
+    "pairedAssetAmount": "2 SOL (draft initial budget; not funded)",
     "initialPoolDeposit": "TBD (up to approved token budget)",
     "lpTokenCustody": "TBD",
     "lockOrBurn": "TBD",
-    "initialPrice": "TBD",
+    "initialPrice": "TBD: select actual EXIT deposit from scenarios",
     "releaseAuthorization": false,
     "pricingExamples": [
       {
         "exitTokens": 200000000,
-        "sol": 5,
-        "solPerEXIT": 2.5e-8,
-        "solPerMillionEXIT": 0.025
+        "sol": 2,
+        "solPerEXIT": 1e-8,
+        "exitPerSOL": 100000000,
+        "remainingLiquidityBudget": 0
       },
       {
-        "exitTokens": 200000000,
-        "sol": 20,
-        "solPerEXIT": 1e-7,
-        "solPerMillionEXIT": 0.1
+        "exitTokens": 100000000,
+        "sol": 2,
+        "solPerEXIT": 2e-8,
+        "exitPerSOL": 50000000,
+        "remainingLiquidityBudget": 100000000
       },
       {
         "exitTokens": 50000000,
-        "sol": 5,
+        "sol": 2,
+        "solPerEXIT": 4e-8,
+        "exitPerSOL": 25000000,
+        "remainingLiquidityBudget": 150000000
+      },
+      {
+        "exitTokens": 20000000,
+        "sol": 2,
         "solPerEXIT": 1e-7,
-        "solPerMillionEXIT": 0.1
+        "exitPerSOL": 10000000,
+        "remainingLiquidityBudget": 180000000
       }
-    ]
+    ],
+    "fundingApproved": false
   },
   "mintAddress": null,
   "logoApproval": "approved",
