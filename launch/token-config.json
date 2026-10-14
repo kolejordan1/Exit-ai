@@ -53,18 +53,38 @@
     }
   ],
   "liquidity": {
-    "venue": "TBD",
-    "pair": "TBD",
+    "venue": "TBD (Raydium or Orca subject to pool type, cost and custody review)",
+    "pair": "EXIT/SOL (proposed; not approved for funding)",
     "amount": "TBD",
     "custody": "TBD",
     "tokenBudget": 200000000,
-    "pairedAsset": "TBD",
+    "pairedAsset": "SOL",
     "pairedAssetAmount": "TBD",
     "initialPoolDeposit": "TBD (up to approved token budget)",
     "lpTokenCustody": "TBD",
     "lockOrBurn": "TBD",
     "initialPrice": "TBD",
-    "releaseAuthorization": false
+    "releaseAuthorization": false,
+    "pricingExamples": [
+      {
+        "exitTokens": 200000000,
+        "sol": 5,
+        "solPerEXIT": 2.5e-8,
+        "solPerMillionEXIT": 0.025
+      },
+      {
+        "exitTokens": 200000000,
+        "sol": 20,
+        "solPerEXIT": 1e-7,
+        "solPerMillionEXIT": 0.1
+      },
+      {
+        "exitTokens": 50000000,
+        "sol": 5,
+        "solPerEXIT": 1e-7,
+        "solPerMillionEXIT": 0.1
+      }
+    ]
   },
   "mintAddress": null,
   "logoApproval": "approved",
