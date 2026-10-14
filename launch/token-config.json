@@ -1,0 +1,21 @@
+{
+  "status": "DRAFT_NOT_MINTED",
+  "chain": "solana",
+  "program": "original SPL Token Program",
+  "name": "EXIT AI",
+  "symbol": "EXIT",
+  "decimals": 9,
+  "supply": null,
+  "mintAuthority": "revoke after approved mint",
+  "freezeAuthority": null,
+  "metadataAuthority": "TBD",
+  "creatorWallet": null,
+  "allocations": [],
+  "liquidity": {
+    "venue": "TBD",
+    "pair": "TBD",
+    "amount": "TBD",
+    "custody": "TBD"
+  },
+  "mintAddress": null
+}
