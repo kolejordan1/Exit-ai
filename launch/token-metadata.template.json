@@ -1,0 +1,16 @@
+{
+  "name": "EXIT AI",
+  "symbol": "EXIT",
+  "description": "EXIT AI is a Solana-first token research and simulated trading project. Features are under development. No guaranteed returns or ownership rights.",
+  "image": "REPLACE_WITH_PERMANENT_PUBLIC_IMAGE_URL",
+  "external_url": "https://exit-ai-web-production.up.railway.app",
+  "properties": {
+    "files": [
+      {
+        "uri": "REPLACE_WITH_PERMANENT_PUBLIC_IMAGE_URL",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}
