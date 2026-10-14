@@ -10,7 +10,40 @@
   "freezeAuthority": null,
   "metadataAuthority": "TBD",
   "creatorWallet": "9sMaCfsHPMRChEnGA5KJRrupoowf3pfmQPUF4Fpx9s87",
-  "allocations": [],
+  "allocations": [
+    {
+      "category": "community_liquidity",
+      "percent": 60,
+      "tokens": 600000000,
+      "wallet": null,
+      "vesting": "TBD; distinguish liquidity deposit from community distribution",
+      "approved": false
+    },
+    {
+      "category": "development",
+      "percent": 20,
+      "tokens": 200000000,
+      "wallet": null,
+      "vesting": "Proposed 12-month cliff then 24-month linear vesting; approval required",
+      "approved": false
+    },
+    {
+      "category": "treasury",
+      "percent": 15,
+      "tokens": 150000000,
+      "wallet": null,
+      "vesting": "Proposed multisig custody and 36-month linear release; approval required",
+      "approved": false
+    },
+    {
+      "category": "marketing",
+      "percent": 5,
+      "tokens": 50000000,
+      "wallet": null,
+      "vesting": "Proposed 24-month monthly release with publicly disclosed spending; approval required",
+      "approved": false
+    }
+  ],
   "liquidity": {
     "venue": "TBD",
     "pair": "TBD",
@@ -26,7 +59,7 @@
     "supply": true,
     "creatorWallet": "address supplied, ownership unverified",
     "mintAuthorityPolicy": true,
-    "allocation": false,
+    "allocation": "balanced 60/20/15/5 model drafted, NOT approved for execution",
     "liquidity": false,
     "metadataUpdateAuthority": false,
     "legalReview": false,
