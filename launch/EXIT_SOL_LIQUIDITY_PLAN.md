@@ -8,16 +8,18 @@
 - Liquidity budget: 200,000,000 EXIT (20% of supply).
 - Community distribution: 400,000,000 EXIT (40%); separate from pool reserves.
 - Creator public address: `9sMaCfsHPMRChEnGA5KJRrupoowf3pfmQPUF4Fpx9s87`; ownership not yet verified and not automatically an LP custody wallet.
-- DEX, SOL budget, actual pool deposit, custody policy and launch date: **TBD**.
+- Draft initial paired-asset funding budget: **2 SOL** (not committed or funded).\n- DEX, actual EXIT pool deposit, custody policy and launch date: **TBD**.
 
-## Illustrative constant-product pool ratios
-| Scenario | EXIT deposited | SOL deposited | Spot price SOL per EXIT | EXIT remaining from 200M liquidity budget |
-|---|---:|---:|---:|---:|
-| A | 200,000,000 | 5 | 0.000000025 | 0 |
-| B | 200,000,000 | 20 | 0.000000100 | 0 |
-| C | 50,000,000 | 5 | 0.000000100 | 150,000,000 |
+## Initial pool pricing examples — draft 2 SOL budget
 
-Formula: initial SOL/EXIT spot ratio = SOL pool reserve / EXIT pool reserve. Values are *not* USD prices, token valuations, predictions, guaranteed execution prices or commitments. If using concentrated liquidity, the deposit ratio, selected range and current price need venue-specific calculations. Deposits may incur rent, network and platform fees. Reserve SOL separately for these costs.
+| EXIT deposited | SOL deposited | Initial SOL per EXIT | EXIT per SOL | Undeployed EXIT from liquidity budget |
+|---:|---:|---:|---:|---:|
+| 200,000,000 | 2 | 0.000000010 | 100,000,000 | 0 |
+| 100,000,000 | 2 | 0.000000020 | 50,000,000 | 100,000,000 |
+| 50,000,000 | 2 | 0.000000040 | 25,000,000 | 150,000,000 |
+| 20,000,000 | 2 | 0.000000100 | 10,000,000 | 180,000,000 |
+
+Constant-product initial spot ratio = SOL reserve / EXIT reserve. These ratios are hypothetical, **not USD prices or valuations**, and assume a conventional constant-product pool. Actual quotes, fees, price impact, opening pool parameters and concentrated-liquidity math may differ. 2 SOL is the proposed *pool contribution*; additional SOL may be required for rent, transaction fees, pool creation and operational reserve. With only 2 SOL, liquidity can be shallow and volatile; a smaller EXIT deposit changes nominal opening price, not SOL-side depth. No scenario is approved for execution.
 
 ## Funding approvals required
 1. Select DEX and pool mechanism (e.g. Raydium CPMM or an Orca pool); independently verify official contracts and fee schedule.
@@ -42,3 +44,14 @@ Formula: initial SOL/EXIT spot ratio = SOL pool reserve / EXIT pool reserve. Val
 
 ## Explicit no-action guardrail
 No transaction is approved by this document. Final mint, transfer, pool creation, funding, lock or listing each requires explicit user authorization.
+
+## Outstanding 2 SOL funding and custody decisions
+
+- [x] Draft pair EXIT/SOL and 2 SOL funding budget recorded (no transfer authorization).
+- [ ] Select exact EXIT initial deposit (20M, 50M, 100M, 200M or another amount no more than 200M).
+- [ ] Confirm whether 2 SOL is solely pool funding and approve separate fee/rent/operating reserves.
+- [ ] Confirm funding source and wallet control; verify creator address ownership by signed message.
+- [ ] Choose DEX and constant-product versus concentrated-liquidity pool; verify current fees and pool requirements.
+- [ ] Specify LP ownership wallet, multisig signers/quorum, lock/escrow/burn decision and withdrawal policy; publish verifiable proof only after implementation.
+- [ ] Specify release schedule for unused liquidity tokens and community distribution (400M EXIT), with enforceable custody/vesting.
+- [ ] Complete legal review, devnet rehearsal, final transaction review and separate explicit approval for each on-chain action.
