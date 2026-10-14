@@ -59,11 +59,15 @@
     "custody": "TBD",
     "tokenBudget": 200000000,
     "pairedAsset": "SOL",
-    "pairedAssetAmount": "2 SOL (draft initial budget; not funded)",
-    "initialPoolDeposit": "TBD (up to approved token budget)",
+    "pairedAssetAmount": "2 SOL (draft; unfunded)",
+    "initialPoolDeposit": 50000000,
     "lpTokenCustody": "TBD",
     "lockOrBurn": "TBD",
-    "initialPrice": "TBD: select actual EXIT deposit from scenarios",
+    "initialPrice": {
+      "solPerEXIT": 4e-8,
+      "exitPerSOL": 25000000,
+      "method": "hypothetical constant-product reserve ratio; before fees and trading"
+    },
     "releaseAuthorization": false,
     "pricingExamples": [
       {
@@ -95,7 +99,9 @@
         "remainingLiquidityBudget": 180000000
       }
     ],
-    "fundingApproved": false
+    "fundingApproved": false,
+    "undeployedTokenReserve": 150000000,
+    "depositApproval": false
   },
   "mintAddress": null,
   "logoApproval": "approved",
@@ -107,7 +113,7 @@
     "creatorWallet": "address supplied, ownership unverified",
     "mintAuthorityPolicy": true,
     "allocation": "60/20/15/5 draft with 200M liquidity + 400M community split recorded; no execution authorization",
-    "liquidity": false,
+    "liquidity": "50M EXIT + 2 SOL initial pool deposit recorded as draft only; no on-chain funding authorized",
     "metadataUpdateAuthority": false,
     "legalReview": false,
     "finalMintAuthorization": false
