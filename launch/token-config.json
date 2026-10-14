@@ -5,11 +5,11 @@
   "name": "EXIT AI",
   "symbol": "EXIT",
   "decimals": 9,
-  "supply": null,
-  "mintAuthority": "revoke after approved mint",
+  "supply": 1000000000,
+  "mintAuthority": "revoke after initial supply minted, requires separate authorization",
   "freezeAuthority": null,
   "metadataAuthority": "TBD",
-  "creatorWallet": null,
+  "creatorWallet": "9sMaCfsHPMRChEnGA5KJRrupoowf3pfmQPUF4Fpx9s87",
   "allocations": [],
   "liquidity": {
     "venue": "TBD",
@@ -17,5 +17,19 @@
     "amount": "TBD",
     "custody": "TBD"
   },
-  "mintAddress": null
+  "mintAddress": null,
+  "logoApproval": "approved",
+  "approvals": {
+    "tokenName": "draft EXIT AI",
+    "symbol": "draft EXIT",
+    "logo": true,
+    "supply": true,
+    "creatorWallet": "address supplied, ownership unverified",
+    "mintAuthorityPolicy": true,
+    "allocation": false,
+    "liquidity": false,
+    "metadataUpdateAuthority": false,
+    "legalReview": false,
+    "finalMintAuthorization": false
+  }
 }
