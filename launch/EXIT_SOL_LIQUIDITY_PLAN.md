@@ -8,7 +8,7 @@
 - Liquidity budget: 200,000,000 EXIT (20% of supply).
 - Community distribution: 400,000,000 EXIT (40%); separate from pool reserves.
 - Creator public address: `9sMaCfsHPMRChEnGA5KJRrupoowf3pfmQPUF4Fpx9s87`; ownership not yet verified and not automatically an LP custody wallet.
-- Draft initial paired-asset funding budget: **2 SOL** (not committed or funded).\n- DEX, actual EXIT pool deposit, custody policy and launch date: **TBD**.
+- Draft initial paired-asset funding budget: **2 SOL** (not committed or funded).\n- Proposed initial pool deposit: **50,000,000 EXIT + 2 SOL**, draft only, not funded.\n- Undeployed liquidity budget: **150,000,000 EXIT**, release schedule TBD.\n- Proposed initial constant-product spot ratio: **0.000000040 SOL per EXIT** (25,000,000 EXIT per SOL), before fees and trading.\n- DEX, custody policy and launch date: **TBD**.
 
 ## Initial pool pricing examples — draft 2 SOL budget
 
@@ -48,10 +48,28 @@ No transaction is approved by this document. Final mint, transfer, pool creation
 ## Outstanding 2 SOL funding and custody decisions
 
 - [x] Draft pair EXIT/SOL and 2 SOL funding budget recorded (no transfer authorization).
-- [ ] Select exact EXIT initial deposit (20M, 50M, 100M, 200M or another amount no more than 200M).
+- [x] Record proposed initial pool deposit: 50,000,000 EXIT + 2 SOL (not authorized for funding).
 - [ ] Confirm whether 2 SOL is solely pool funding and approve separate fee/rent/operating reserves.
 - [ ] Confirm funding source and wallet control; verify creator address ownership by signed message.
 - [ ] Choose DEX and constant-product versus concentrated-liquidity pool; verify current fees and pool requirements.
 - [ ] Specify LP ownership wallet, multisig signers/quorum, lock/escrow/burn decision and withdrawal policy; publish verifiable proof only after implementation.
 - [ ] Specify release schedule for unused liquidity tokens and community distribution (400M EXIT), with enforceable custody/vesting.
 - [ ] Complete legal review, devnet rehearsal, final transaction review and separate explicit approval for each on-chain action.
+
+## Selected draft pool scenario (recorded)
+
+- Initial EXIT contribution: **50,000,000** (5% of 1B total supply, 25% of the 200M liquidity budget).
+- Initial SOL contribution: **2 SOL**; separate SOL for fees, rent and operations is still TBD.
+- Initial constant-product reserve ratio: `2 / 50,000,000 = 0.00000004 SOL per EXIT`, equivalently 25,000,000 EXIT per SOL.
+- Undeployed liquidity reserve: **150,000,000 EXIT**; custody, timelock and future release authorizations TBD.
+- This price ratio is not a USD quote, promised market value or guarantee. With 2 SOL the pool has limited SOL-side depth and can exhibit high price impact.
+
+### Remaining explicit approvals
+1. DEX/pool type and pool-creation fee schedule.
+2. Funding wallet ownership verification; 2 SOL funding source and separate SOL fee/rent buffer.
+3. LP position ownership, multisig signers/quorum, lock/withdrawal rights and on-chain verification method.
+4. Dedicated custody and release schedule for the 150M EXIT undeployed liquidity reserve.
+5. Community 400M EXIT distribution eligibility, vault, claims and vesting.
+6. Team, treasury and marketing vesting implementation, recipients and disclosures.
+7. Metadata update authority, mint revocation execution plan, devnet testing and independent legal/security review.
+8. Explicit final authorization before mint, transfer, pool creation, funding, lock or listing.
